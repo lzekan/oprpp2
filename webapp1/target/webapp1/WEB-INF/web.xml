@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app 
+    xmlns="https://jakarta.ee/xml/ns/jakartaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+    version="6.0"
+>
+
+  <display-name>Moja prva aplikacija</display-name>
+  <description>
+     Prva aplikacija
+  </description>
+   
+    
+    
+   <servlet>
+    <servlet-name>d1</servlet-name>
+    <servlet-class>hr.fer.zemris.web.demo.DemoServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>PrviServlet</servlet-name>
+    <servlet-class>hr.fer.zemris.java.p11.servleti.PrviServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>kv</servlet-name>
+    <servlet-class>hr.fer.zemris.java.p11.servleti.KvadratiServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>d1</servlet-name>
+    <url-pattern>/d1/</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>PrviServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>kv</servlet-name>
+    <url-pattern>/racunaj-kvadrate</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
